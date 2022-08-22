@@ -1,0 +1,392 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: #1B1E25;
+    /* background-color: red; */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+::placeholder{
+    color: rgba(104, 107, 114, 1);
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+a{
+    text-decoration: 0;
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+.add-style{
+    background: linear-gradient(91.47deg, #c10171 3.73%, #5C00F2 100%);
+    border: none;
+    cursor: pointer;
+}
+.remove-style{
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(91.47deg, #c10171 3.73%, #5C00F2 100%) 13;
+    background-color: rgba(22, 22, 22, 1);
+}
+
+.Hot-more a{
+    
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(91.47deg, #c10171 3.73%, #5C00F2 100%) 13;
+    background-color: rgba(22, 22, 22, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Hot-more button{
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(255, 255, 255, 1);
+    /* background: linear-gradient(91.47deg, #c10171 3.73%, #5C00F2 100%);
+    border: none;
+    cursor: pointer; */
+}
+
+.Hot-slideshow-btn button{
+    border-radius: 50px;
+    border: 0;
+}
+.Hot-slideshow{
+    /* background-image: linear-gradient(360deg, #1B1E25 0%, rgba(27, 30, 37, 0) 29.22%), radial-gradient(72.5% 427.7% at 96.33% 50%, rgba(27, 30, 37, 0) 39.58%, rgba(27, 30, 37, 0.93) 94.79%), url(https://bit.ly/2OhbMHr); */
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+@media(min-width: 300px){
+    .Hot-rate{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 33px;
+        line-height: 25px;
+        /* line-height: 16px; */
+        background: linear-gradient(91.47deg, #C10171 3.73%, #5C00F2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.48);
+    }
+    .Hot-title{
+        width: 180px;
+        height: fit-content;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 36.2px;
+        font-style: normal;
+        color: rgba(255, 255, 255, 1);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .Hot-description{
+        display: none;
+    }
+    .Hot-more button{
+        width: 103px;
+        font-size: 14px;
+        line-height: 21px;
+        height: 27px;
+    }
+    .Hot-more a{
+        display: none;
+    }
+    .Hot-info{
+        /* background-color: red; */
+        margin-left: 20px;
+        position: relative;
+        top: 100px;
+        z-index: 0;
+    }
+    .Hot-more{
+        display: flex;
+        width: 335px;
+        height: 42px;
+        margin-top: 7px;
+    }
+    .Hot-slideshow-btn{
+        position: absolute;
+        right: 0;
+        top: 218px;
+        margin-right: 31px;
+        margin-top: 37px;
+    }
+    .Hot-slideshow-btn button{
+        height: 3px;
+        margin-right: 4px;
+    }
+    .Hot-slideshow-btn-notactive{
+        width: 8.24px;
+        background-color: rgba(255, 255, 255, 0.37);
+    }
+    .Hot-slideshow-btn-active{
+        background-color: rgba(255, 255, 255, 1);
+        width: 18.76px;
+    }
+    .Hot-slideshow{
+        height: 245px;
+    }
+    .copyright{
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 82px;
+        color: rgba(104, 107, 114, 1);
+        font-size: 12px;
+        line-height: 12px;
+        font-style: normal;
+    }
+}
+
+@media(min-width: 768px){
+    .Hot-rate{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 61px;
+        line-height: 50px;
+        /* line-height: 16px; */
+        background: linear-gradient(91.47deg, #C10171 3.73%, #5C00F2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.48);
+    }
+    .Hot-title{
+        width: 400px;
+        height: fit-content;
+        font-size: 55px;
+        font-weight: 500;
+        line-height: 80px;
+        font-style: normal;
+        color: rgba(255, 255, 255, 1);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .Hot-description{
+        width: 346px;
+        height: 42px;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        font-style: normal;
+        color: rgba(255, 255, 255, 1);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+    }
+    .Hot-more{
+        display: flex;
+        width: 335px;
+        height: 42px;
+        margin-top: 16px;
+    }
+    .Hot-more button{
+        margin-left: 14px;
+        width: 140px;
+        font-size: 16px;
+        line-height: 24px;
+        height: 100%;
+    }
+    .Hot-more a{
+        display: flex;
+        font-size: 16px;
+        line-height: 24px;
+        width: 140px;
+        height: 42;
+    }
+    .Hot-info{
+        /* background-color: red; */
+        margin-left: 40px;
+        position: relative;
+        top: 130px;
+        z-index: 0;
+    }
+    .Hot-slideshow-btn{
+        position: absolute;
+        right: 0;
+        top: 376px;
+        margin-right: 48px;
+        margin-top: 39px;
+    }
+    .Hot-slideshow-btn button{
+        height: 6px;
+        margin-right: 8px;
+    }
+    .Hot-slideshow-btn-notactive{
+        width: 14.43px;
+        background-color: rgba(255, 255, 255, 0.37);
+    }
+    .Hot-slideshow-btn-active{
+        background-color: rgba(255, 255, 255, 1);
+        width: 33.81px;
+    }
+    .Hot-slideshow{
+        height: 432px;
+    }
+    .copyright{
+        margin-top: 63px;
+        text-align: center;
+        margin-bottom: 17px;
+        color: rgba(104, 107, 114, 1);
+        font-size: 14px;
+        line-height: 21px;
+        font-style: normal;
+    }
+}
+
+@media(min-width: 1280px){
+    .Hot-rate{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 50px;
+        /* line-height: 16px; */
+        background: linear-gradient(91.47deg, #C10171 3.73%, #5C00F2 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.48);
+    }
+    .Hot-title{
+        width: 600px;
+        height: fit-content;
+        font-size: 76px;
+        font-weight: 500;
+        line-height: 110px;
+        font-style: normal;
+        color: rgba(255, 255, 255, 1);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .Hot-description{
+        width: 346px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        font-style: normal;
+        color: rgba(255, 255, 255, 1);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+    }
+    .Hot-more{
+        display: flex;
+        width: 335px;
+        height: 42px;
+        margin-top: 16px;
+    }
+    .Hot-more button{
+        margin-left: 15px;
+        width: 160px;
+        font-size: 16px;
+        line-height: 24px;
+        height: 100%;
+        margin-right: 8px;
+    }
+    .Hot-more a{
+        display: flex;
+        font-size: 16px;
+        line-height: 24px;
+        width: 160px;
+        height: 42;
+    }
+    .Hot-info{
+        /* background-color: red; */
+        margin-left: 111px;
+        position: relative;
+        top: 235px;
+        z-index: 0;
+    }
+    .Hot-slideshow-btn{
+        position: absolute;
+        right: 0;
+        top: 595px;
+        margin-right: 40px;
+        margin-top: 110px;
+    }
+    .Hot-slideshow-btn button{
+        height: 6px;
+    }
+    .Hot-slideshow-btn-notactive{
+        width: 14.43px;
+        background-color: rgba(255, 255, 255, 0.37);
+    }
+    .Hot-slideshow-btn-active{
+        background-color: rgba(255, 255, 255, 1);
+        width: 33.81px;
+    }
+    .Hot-slideshow{
+        height: 720px;
+    }
+    .copyright{
+        margin-top: 96px;
+        text-align: center;
+        margin-bottom: 15px;
+        color: rgba(104, 107, 114, 1);
+        font-size: 14px;
+        line-height: 21px;
+        font-style: normal;
+    }
+}
