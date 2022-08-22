@@ -109,7 +109,7 @@ const Header = () => {
             </Helmet>
             {/* <body> */}
                 <div className='container df ai-c'>
-                    <Link className='logo df' to='/'>
+                    <Link className='logo df' to='/wtw'>
                         <div className='df ai-c'>
                             <img className='logo-left' src={logoLeft}></img>
                             <img className='logo-center' src={logoCenter}></img>
@@ -123,13 +123,13 @@ const Header = () => {
                         <input className='inputFunc' type='text' placeholder='搜尋劇名/演員' onClick={searchFunc}></input>
                         {/* placeholder='搜尋劇名/演員' value={searchContent} onChange={contentChange}*/}
                     </form>
-                    <Link className='searchPage' to="/search"></Link>
-                    <Link className='detailPage' to="/detail"></Link>
+                    <Link className='searchPage' to="/wtw/search"></Link>
+                    <Link className='detailPage' to="/wtw/detail"></Link>
                     <ul className='df ml-a jc-sb mr-40 HeaderList'>
-                        <li className='header-list'><Link className='header-list-a' to='/movie'>電影</Link></li>
-                        <li className='header-list'><Link className='header-list-a' to='/drama'>影集</Link></li>
-                        <li className='header-list'><Link className='header-list-a' to='/theme'>主題館</Link></li>
-                        <li className='header-list'><Link className='header-list-a' to='/myfilm'>我的片單</Link></li>
+                        <li className='header-list'><Link className='header-list-a' to='/wtw/movie'>電影</Link></li>
+                        <li className='header-list'><Link className='header-list-a' to='/wtw/drama'>影集</Link></li>
+                        <li className='header-list'><Link className='header-list-a' to='/wtw/theme'>主題館</Link></li>
+                        <li className='header-list'><Link className='header-list-a' to='/wtw/myfilm'>我的片單</Link></li>
                         <li className='LogIcon' onClick={cleanAllLocalStorage}><a href='#'><img src={NotLog}></img></a></li>
                     </ul>
                 </div>
@@ -138,25 +138,25 @@ const Header = () => {
                 </div>
                 <ul className='HeaderList-mobile'>
                     <li className='header-list-mobile'>
-                        <Link to='/movie'>
+                        <Link to='/wtw/movie'>
                             <img src={FilmMobileIcon}></img>
                             <h3>電影</h3>
                         </Link>
                     </li>
                     <li className='header-list-mobile'>
-                        <Link to='/drama'>
+                        <Link to='/wtw/drama'>
                             <img src={VideoMobileIcon}></img>
                             <h3>影集</h3>
                         </Link>
                     </li>
                     <li className='header-list-mobile'>
-                        <Link to='/theme'>
+                        <Link to='/wtw/theme'>
                             <img src={CollectIcon}></img>
                             <h3>主題館</h3>
                         </Link>
                     </li>
                     <li className='header-list-mobile'>
-                        <Link to='/myfilm'>
+                        <Link to='/wtw/myfilm'>
                             <img src={FavoriteIcon}></img>
                             <h3>我的片單</h3>
                         </Link>

@@ -15,15 +15,15 @@ function App() {
   // 搜尋功能
   return (
     // <BrowserRouter>
-    <HashRouter basename="/wtw">
+    <HashRouter>
       <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='/movie' element={<Movie />}></Route>
-        <Route path='/drama' element={<Drama />}></Route>
-        <Route path='/theme' element={<Theme />}></Route>
-        <Route path='/search' element={<Header />}></Route>
-        <Route path='/myfilm' element={<MyFilm />}></Route>
-        <Route path='/detail' element={<Detail />}></Route>
+        <Route path='/wtw' element={<Home />}></Route>
+        <Route path='/wtw/movie' element={<Movie />}></Route>
+        <Route path='/wtw/drama' element={<Drama />}></Route>
+        <Route path='/wtw/theme' element={<Theme />}></Route>
+        <Route path='/wtw/search' element={<Header />}></Route>
+        <Route path='/wtw/myfilm' element={<MyFilm />}></Route>
+        <Route path='/wtw/detail' element={<Detail />}></Route>
       </Routes>
     </HashRouter>
     // </BrowserRouter>
