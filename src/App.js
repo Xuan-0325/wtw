@@ -8,14 +8,14 @@ import Theme from './Page/Theme';
 import Search from './Page/Search';
 import MyFilm from './Page/MyFilm';
 import Header from './Page/Component/Header';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useState } from 'react';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 
 function App() {
 
   // 搜尋功能
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <HashRouter basename="/wtw">
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/movie' element={<Movie />}></Route>
@@ -25,7 +25,8 @@ function App() {
         <Route path='/myfilm' element={<MyFilm />}></Route>
         <Route path='/detail' element={<Detail />}></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
+    // </BrowserRouter>
     // <Home />
     // <Detail />
     // <Movie />

@@ -85,7 +85,7 @@ a{
         display: none;
     }
     .detail-main-mobile{
-        background-image: linear-gradient(360deg, #1B1E25 0%, rgba(27, 30, 37, 0) 29.22%), radial-gradient(72.5% 427.7% at 96.33% 50%, rgba(27, 30, 37, 0) 39.58%, rgba(27, 30, 37, 0.93) 94.79%), url(https://bit.ly/2OhbMHr);
+        /* background-image: linear-gradient(360deg, #1B1E25 0%, rgba(27, 30, 37, 0) 29.22%), radial-gradient(72.5% 427.7% at 96.33% 50%, rgba(27, 30, 37, 0) 39.58%, rgba(27, 30, 37, 0.93) 94.79%), url(https://bit.ly/2OhbMHr); */
         background-position: center;
         background-size: cover;
         height: 245px;

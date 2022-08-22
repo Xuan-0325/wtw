@@ -42,6 +42,9 @@ const Theme = () => {
     let themeChose = async (event) => {
         
         themeTag = event.target.id;
+        if (!themeTag) {
+            themeTag = event.target.parentNode.id;
+        }
         let themeMovieUrl = '';
         let themeTvUrl = '';
 

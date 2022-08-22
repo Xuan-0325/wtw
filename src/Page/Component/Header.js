@@ -162,7 +162,7 @@ const Header = () => {
                         </Link>
                     </li>
                     <li className='header-list-mobile'>
-                        <a href='#'>
+                        <a>
                             <img src={NotLogMobile}></img>
                         </a>
                     </li>
